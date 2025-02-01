@@ -1,0 +1,1 @@
+This example demonstrates a potential issue when using Ruby's `method_missing` and `respond_to_missing?` methods.  Always returning `true` from `respond_to_missing?` prevents `NoMethodError` exceptions from being raised, which might hide actual issues in the code.  The solution shows a more robust approach to managing missing methods.
